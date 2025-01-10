@@ -1,0 +1,6 @@
+uniform float h;
+uniform float2 size;
+half4 main(float2 fragCoord){
+    float2 xy=fragCoord/size.xy;
+    return half4(1,xy,1);
+}
